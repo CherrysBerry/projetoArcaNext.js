@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --marromEscuro: #3D1B07;
+  --marromClaro: #734930;
+  --amarelo: #F9AF58;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --marromEscuro: #3D1B07;
+    --marromClaro: #734930;
+    --amarelo: #F9AF58;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--marromClaro);
+} 
+main{
+  background-color: var(--marromClaro);
+}
+.meio{
+  background-color: var(--marromClaro);
+}
+header{
+  background-color: var(--marromEscuro);
+  color: var(--amarelo);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#logo{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'HeartBubble';
+  text-decoration: none !important;
+  display: inline-block;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  font-family: 'LouisGeorgeCafe';
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background-color: var(--amarelo);
+  color: var(--marromEscuro);
+}
+.cardsOrdem{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+  background-color: var(--marromEscuro);
+}
