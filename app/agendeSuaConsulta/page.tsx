@@ -5,8 +5,11 @@ export default function Consulta() {
     return (
         <div>
             <Header />
-            <main>
-                <p className="Agendar Consulta"></p>
+            <main id = {styles.main}>
+                <p className="Agendar Consulta">Agendar Consulta</p>
+                <br />
+                <form id = {styles.form_consulta}>
+                <div className={styles.meio}>
                 <h3>Tipo de Atendimento:</h3>
                 <div className={styles.tipoAtendimento}>
                     <input type="radio" name = "tipoAtendimentoRadios" id = "tipoConsulta" value ="consultaGeral"/>
@@ -59,9 +62,8 @@ export default function Consulta() {
                             <label htmlFor="18" className={styles.disponivel}>18:00</label>
                         </div>
                     </div>
-                    <h3>Dados do animal:</h3>
+                    <h3 style={{fontSize: "24px", fontWeight: "bold"}}>Dados do animal:</h3>
                     <div className="dados animal">
-                        <br />
                         <span>Espécie:</span>
                         <select name="especie" id={styles.especieSelect}>
                             <option value="cachorro">Cachorro</option>
@@ -89,7 +91,7 @@ export default function Consulta() {
                     </div>
                     <br />
                     <div className={styles.dadosTutor}>
-                        <h3>Dados do tutor</h3>
+                        <h3 style={{fontSize: "24px", fontWeight: "bold"}}>Dados do tutor:</h3>
                         <div className={styles.nomeETelefone}>
                             <div className={styles.campo}>
                                 <span>Nome do tutor:</span>
@@ -113,9 +115,11 @@ export default function Consulta() {
                     <div className={styles.botaoVerde}>
                         <button type="submit" id = {styles.Verde}>Enviar solicitação para atendimento.</button>
                     </div>
-                </div>
+                    </div>
+                    </div>
+                    </form>
             </main>
             <Footer />
-        </div>
-    );
+        </div >
+    )
 }
