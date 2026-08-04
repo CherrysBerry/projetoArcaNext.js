@@ -1,4 +1,4 @@
-.meio {
+.main {
   height: auto;
   width: 90%;
   max-width: 900px;
@@ -10,7 +10,19 @@
   flex-direction: column;
   gap: 15px;
 }
+.meio{
+  height: auto;
+  width: 90%;
+  max-width: 900px;
+  min-height: 100px;
+  background-color: #F9AF58;
+  border-radius: 16px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
+}
 .Agendar {
   margin-top: 50px;
   margin: 0 auto;
@@ -305,4 +317,11 @@
 .dropdownPerfil input[type="checkbox"]:checked+label::before {
   background-color: #3D1B07;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F9AF58' stroke-width='3'><polyline points='20 6 9 17 4 12'/></svg>");
+}
+#logo{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'HeartBubble';
+  text-decoration: none !important;
+  display: inline-block;
 }
