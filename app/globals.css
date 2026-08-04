@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+font-face {
+  font-family: 'louisGeorgeCafe';
+  src: url('/fonts/LouisGeorgeCafe.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+font-face {
+  font-family: 'HeartBubble';
+  src: url('/fonts/HeartBubble.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -23,18 +37,20 @@
   }
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100vh;
   background-color: var(--marromClaro);
-} 
+}
 
-.meio{
+.meio {
   background-color: var(--marromClaro);
 }
-header{
+
+header {
   background-color: var(--marromEscuro);
   color: var(--amarelo);
   padding: 20px 40px;
@@ -45,13 +61,15 @@ header{
   top: 0;
   z-index: 1000;
 }
-#logo{
+
+#logo {
   font-size: 40px;
   font-weight: bold;
   font-family: 'HeartBubble';
   text-decoration: none !important;
   display: inline-block;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -73,13 +91,15 @@ nav a:hover {
   background-color: var(--amarelo);
   color: var(--marromEscuro);
 }
-.cardsOrdem{
+
+.cardsOrdem {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 20px;
 }
-.card{
+
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,6 +109,7 @@ nav a:hover {
   margin: 20px;
   background-color: var(--marromEscuro);
 }
+
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
@@ -116,11 +137,13 @@ input[type="email"]::placeholder {
 
 p {
   font-size: 22px;
+  font-family: 'LouisGeorgeCafe';
 }
 
 span {
   font-size: 22px;
 }
+
 footer {
   background-color: #3D1B07;
   color: white;
@@ -128,6 +151,7 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+
 main {
   width: 100%;
   min-width: 100px;
@@ -138,6 +162,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 textarea {
   resize: none;
   width: 60%;
@@ -173,4 +198,31 @@ input[type="date"] {
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
   cursor: pointer;
+}
+
+@layer base {
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    background-color: #734930;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'LouisGeorgeCafe';
+    outline: none;
+  }
+
+  textarea {
+    background-color: #734930;
+  }
+}
+#logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'HeartBubble';
+  text-decoration: none !important;
+  display: inline-block;
 }
