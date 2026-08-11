@@ -18,13 +18,14 @@
   min-height: 100px;
   background-color: #F9AF58;
   border-radius: 16px;
+  margin-left: 40px;
   padding: 30px 40px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   font-family: 'LouisGeorgeCafe', sans-serif;
 }
-.Agendar {
+.agendarConsulta {
   margin-top: 50px;
   margin: 0 auto;
   font-size: 40px;
@@ -86,17 +87,16 @@
 
 .file {
   width: 10%;
-  margin-bottom: -6px;
+  margin-bottom: 0px;
+  margin-left: 10px;
   font-family: 'LouisGeorgeCafe', sans-serif;
 }
 
 .termoDeEsclarecimento {
-  display: flex;
-  flex-direction: row;
-  width: 30%;
+  width: 50%;
   height: 50%;
   justify-self: center;
-  margin-left: 40px;
+  margin-left: 150px;
   font-family: 'LouisGeorgeCafe', sans-serif;
 }
 
@@ -226,7 +226,7 @@
   font-size: 18px;
   font-family: 'LouisGeorgeCafe', sans-serif;
   cursor: pointer;
-  width: 130px;
+  width: 150px;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='white' d='M6 8L1 3h10z'/></svg>");
   background-repeat: no-repeat;
   background-position: right 15px center;
@@ -253,7 +253,6 @@
   outline: none;
   font-family: 'LouisGeorgeCafe', sans-serif;
 }
-
 .dadosTutor {
   display: flex;
   flex-direction: column;
@@ -280,7 +279,6 @@
   gap: 10px;
   font-family: 'LouisGeorgeCafe', sans-serif;
 }
-
 
 .nomeAnimal {
   gap: 5px;

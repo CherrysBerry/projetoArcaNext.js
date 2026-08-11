@@ -6,11 +6,11 @@ export default function Consulta() {
         <div>
             <Header />
             <main id = {styles.main}>
-                <p className="Agendar Consulta">Agendar Consulta</p>
+                <p className={styles.agendarConsulta}>Agendar Consulta</p>
                 <br />
                 <form id = {styles.form_consulta}>
                 <div className={styles.meio}>
-                <h3>Tipo de Atendimento:</h3>
+                <h3 style={{fontSize: "26px"}}>Tipo de Atendimento:</h3>
                 <div className={styles.tipoAtendimento}>
                     <input type="radio" name = "tipoAtendimentoRadios" id = "tipoConsulta" value ="consultaGeral"/>
                     <label htmlFor="tipoConsulta">Consulta Geral</label>
@@ -21,7 +21,7 @@ export default function Consulta() {
                     <input type="radio" name = "tipoAtendimentoRadios" id = "tipoMicrochipagem" value ="microchipagem"/>
                     <label htmlFor="tipoMicrochipagem">Microchipagem</label>
                 </div>
-                <h3 style = {{justifySelf: "center"}}>Horários Disponíveis</h3>
+                <h3 style = {{justifySelf: "center", fontSize: "26px"}}>Horários Disponíveis:</h3>
                 <label id = {styles.horariosDisponiveis}>
                     <p style = {{fontSize: "22px", marginTop: "4px"}}>Data:</p>
                     <input type="date" name = "date" />
@@ -62,14 +62,15 @@ export default function Consulta() {
                             <label htmlFor="18" className={styles.disponivel}>18:00</label>
                         </div>
                     </div>
-                    <h3 style={{fontSize: "24px", fontWeight: "bold"}}>Dados do animal:</h3>
-                    <div className="dados animal">
+                    <br />
+                    <h3 style={{fontSize: "26px", fontWeight: "bold"}}>Dados do animal</h3>
+                    <div className={styles.dadosAnimal}>
                         <span>Espécie:</span>
                         <select name="especie" id={styles.especieSelect}>
                             <option value="cachorro">Cachorro</option>
                             <option value="gato">Gato</option>
                         </select>
-                        <span>Idade:</span>
+                        <span style={{marginLeft: "20px"}}>Idade:</span>
                         <label htmlFor="idadeText">
                             <input type="text" placeholder="Ex: 20" />
                             <br />
@@ -82,7 +83,7 @@ export default function Consulta() {
                         </div>
                         <br />
                         <div className={styles.observacoesLabel2}>
-                            <p>Observações</p>
+                            <p>Observações:</p>
                             <label htmlFor="observacoesLabel">
                                 <textarea name="observacoesText" id="observacoesTextid" placeholder="Escreva aqui o texto"></textarea>
                             </label>
@@ -91,18 +92,18 @@ export default function Consulta() {
                     </div>
                     <br />
                     <div className={styles.dadosTutor}>
-                        <h3 style={{fontSize: "24px", fontWeight: "bold"}}>Dados do tutor:</h3>
+                        <h3 style={{fontSize: "26px", fontWeight: "bold"}}>Dados do tutor:</h3>
                         <div className={styles.nomeETelefone}>
                             <div className={styles.campo}>
-                                <span>Nome do tutor:</span>
-                                <input type="text" name="nomeTutorTextin" id="nomeTutorTextid" placeholder="Ex: Alberto Silva" />
+                                <span style={{marginBottom: "20px"}}>Nome do tutor:</span>
+                                <input style={{marginBottom: "20px"}} type="text" name="nomeTutorTextin" id="nomeTutorTextid" placeholder="Ex: Alberto Silva" />
                             </div>
                             <div className={styles.campo}>
                                 <span>Telefone:</span>
                                 <input type="tel" name="telefoneTutor" placeholder="Ex: 99999-9999" />
                             </div>
                         </div>
-                        <div className="emailLabel">
+                        <div className={styles.emailLabel}>
                             <span>Email:</span>
                             <input type="email" placeholder="Ex: xxxx@gmail.com"/>
                         </div>
@@ -110,10 +111,12 @@ export default function Consulta() {
                     <br />
                     <div className={styles.termoDeEsclarecimento}>
                         <p style={{fontSize: "17px"}}>Termo de Esclarecimento</p>
+                            <a href="./docs/Termo de Esclarecimento.pdf" download="Termo de esclarecimento">
+                                <img src="./imgs/file.png" alt="imagem de arquivo" className={styles.file}/>
+                            </a>
                     </div>
-                    <br />
                     <div className={styles.botaoVerde}>
-                        <button type="submit" id = {styles.Verde}>Enviar solicitação para atendimento.</button>
+                        <button type="submit" id = {styles.Verde}>Enviar solicitação para atendimento</button>
                     </div>
                     </div>
                     </div>
