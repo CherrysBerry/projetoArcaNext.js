@@ -1,0 +1,54 @@
+.header {
+  background-color: var(--marromEscuro, #3D1B07);
+  color: var(--amarelo, #F9AF58);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'HeartBubble', sans-cursive;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'HeartBubble', cursive;
+  text-decoration: none !important;
+  display: inline-block;
+  color: var(--amarelo, #F9AF58);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  font-family: 'LouisGeorgeCafe', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+.navLink:hover {
+  background-color: var(--amarelo, #F9AF58);
+  color: var(--marromEscuro, #3D1B07);
+}
