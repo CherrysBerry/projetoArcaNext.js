@@ -10,7 +10,7 @@ export default function Consulta() {
                 <br />
                 <form id = {styles.form_consulta}>
                 <div className={styles.meio}>
-                <h3 style={{fontSize: "26px"}}>Tipo de Atendimento:</h3>
+                <h3 style={{fontSize: "26px", fontWeight: "bold"}}>Tipo de Atendimento:</h3>
                 <div className={styles.tipoAtendimento}>
                     <input type="radio" name = "tipoAtendimentoRadios" id = "tipoConsulta" value ="consultaGeral"/>
                     <label htmlFor="tipoConsulta">Consulta Geral</label>
@@ -21,7 +21,7 @@ export default function Consulta() {
                     <input type="radio" name = "tipoAtendimentoRadios" id = "tipoMicrochipagem" value ="microchipagem"/>
                     <label htmlFor="tipoMicrochipagem">Microchipagem</label>
                 </div>
-                <h3 style = {{justifySelf: "center", fontSize: "26px"}}>Horários Disponíveis:</h3>
+                <h3 style = {{justifySelf: "center", fontSize: "26px", fontWeight: "bold"}}>Horários Disponíveis:</h3>
                 <label id = {styles.horariosDisponiveis}>
                     <p style = {{fontSize: "22px", marginTop: "4px"}}>Data:</p>
                     <input type="date" name = "date" />
