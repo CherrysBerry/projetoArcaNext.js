@@ -31,7 +31,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.filter-header {
+.filterHeader {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -39,14 +39,14 @@
     border-bottom: 2px solid #F9AF58;
 }
 
-.filter-header .filter-toggle {
+.filterHeader .filterToggle {
     cursor: pointer;
     margin-right: 10px;
     color: #3D1B07;
     font-size: 0.9rem;
 }
 
-.filter-header h3 {
+.filterHeader h3 {
     color: #3D1B07;
     font-size: 1.2rem;
     margin: 0;
@@ -54,11 +54,11 @@
     font-weight: 700;
 }
 
-.filter-section {
+.filterSection {
     margin-bottom: 25px;
 }
 
-.filter-section h4 {
+.filterSection h4 {
     color: #3D1B07;
     font-size: 1rem;
     margin-bottom: 12px;
@@ -66,13 +66,13 @@
     font-family: 'LouisGeorgeCafe';
 }
 
-.filter-options {
+.filterOptions {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.toggle-filter {
+.toggleFilter {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -82,15 +82,15 @@
     transition: 0.2s;
 }
 
-.toggle-filter:hover {
+.toggleFilter:hover {
     background-color: rgba(249, 175, 88, 0.1);
 }
 
-.toggle-filter input[type="checkbox"] {
+.toggleFilter input[type="checkbox"] {
     display: none;
 }
 
-.toggle-switch {
+.toggleSwitch {
     width: 40px;
     height: 24px;
     background-color: #ccc;
@@ -100,7 +100,7 @@
     flex-shrink: 0;
 }
 
-.toggle-switch::before {
+.toggleSwitch::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -112,33 +112,33 @@
     transition: 0.3s;
 }
 
-.toggle-filter input[type="checkbox"]:checked+.toggle-switch {
+.toggleFilter input[type="checkbox"]:checked+.toggleSwitch {
     background-color: #F9AF58;
 }
 
-.toggle-filter input[type="checkbox"]:checked+.toggle-switch::before {
+.toggleFilter input[type="checkbox"]:checked+.toggleSwitch::before {
     left: 18px;
 }
 
-.label-text {
+.labelText {
     color: #3D1B07;
     font-size: 0.95rem;
     font-weight: 500;
     font-family: 'LouisGeorgeCafe';
 }
 
-.animals-section {
+.animalsSection {
     flex: 1;
 }
 
-.animals-grid {
+.animalsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-bottom: 40px;
 }
 
-.animal-card {
+.animalCard {
     background-color: white;
     border: 2px solid #f0f0f0;
     border-radius: 12px;
@@ -150,13 +150,13 @@
     height: 100%;
 }
 
-.animal-card:hover {
+.animalCard:hover {
     box-shadow: 0 8px 20px rgba(249, 175, 88, 0.3);
     transform: translateY(-8px);
     border-color: #F9AF58;
 }
 
-.animal-image {
+.animalImage {
     width: 100%;
     aspect-ratio: 1;
     overflow: hidden;
@@ -164,25 +164,25 @@
     position: relative;
 }
 
-.animal-image img {
+.animalImage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.animal-card:hover .animal-image img {
+.animalCard:hover .animalImage img {
     transform: scale(1.05);
 }
 
-.animal-info {
+.animalInfo {
     padding: 20px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.animal-info h3 {
+.animalInfo h3 {
     color: #3D1B07;
     margin-bottom: 8px;
     font-size: 1.3rem;
@@ -190,7 +190,7 @@
     font-weight: 700;
 }
 
-.animal-species {
+.animalSpecies {
     color: #F9AF58;
     font-size: 0.9rem;
     font-weight: 600;
@@ -199,14 +199,14 @@
     letter-spacing: 1px;
 }
 
-.animal-details {
+.animalDetails {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 12px;
 }
 
-.detail-badge {
+.detailBadge {
     background-color: #f0f0f0;
     color: #3D1B07;
     padding: 6px 10px;
@@ -216,7 +216,7 @@
     font-family: 'LouisGeorgeCafe';
 }
 
-.animal-description {
+.animalDescription {
     color: #666;
     font-size: 0.9rem;
     line-height: 1.5;
@@ -225,7 +225,7 @@
     flex-grow: 1;
 }
 
-.adopt-btn {
+.adoptBtn {
     background: linear-gradient(135deg, #F9AF58 0%, #f9a840 100%);
     color: #3D1B07;
     border: none;
@@ -239,13 +239,13 @@
     box-shadow: 0 4px 12px rgba(249, 175, 88, 0.3);
 }
 
-.adopt-btn:hover {
+.adoptBtn:hover {
     background: linear-gradient(135deg, #f9a840 0%, #f39a1c 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(249, 175, 88, 0.4);
 }
 
-.adopt-btn:active {
+.adoptBtn:active {
     transform: translateY(0);
 }
 
@@ -258,7 +258,7 @@
     flex-wrap: wrap;
 }
 
-.page-dot {
+.pageDot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -268,17 +268,17 @@
     transition: all 0.3s ease;
 }
 
-.page-dot:hover {
+.pageDot:hover {
     background-color: #F9AF58;
     transform: scale(1.2);
 }
 
-.page-dot.active {
+.pageDot.active {
     background-color: #3D1B07;
     transform: scale(1.4);
 }
 
-.cta-section {
+.ctaSection {
     text-align: center;
     padding: 30px;
     background: linear-gradient(135deg, #fff8f0 0%, #fffbf7 100%);
@@ -287,7 +287,7 @@
     box-shadow: 0 4px 12px rgba(249, 175, 88, 0.2);
 }
 
-.cta-section p {
+.ctaSection p {
     color: #3D1B07;
     font-size: 1rem;
     margin: 0;
@@ -295,7 +295,7 @@
     font-weight: 600;
 }
 
-.cta-section a {
+.ctaSection a {
     color: #F9AF58;
     text-decoration: none;
     font-weight: 700;
@@ -303,12 +303,12 @@
     border-bottom: 2px solid #F9AF58;
 }
 
-.cta-section a:hover {
+.ctaSection a:hover {
     color: #3D1B07;
     border-bottom-color: #3D1B07;
 }
 
-.no-results {
+.noResults {
     grid-column: 1 / -1;
     text-align: center;
     padding: 60px 20px;
